@@ -1,0 +1,2 @@
+D:\LA\70-532\70-532\WebApiApp\WebApiApp\bin\Microsoft.ApplicationInsights.xml
+D:\LA\70-532\70-532\WebApiApp\WebApiApp\bin\Microsoft.AI.WindowsServer.xml

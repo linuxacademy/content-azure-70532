@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "SF OneApp - Stateful";
+}
+<div class="row">
+    <!-- Heading row -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Stateful Backend Service</h1>
+            <p>A stateful Reliable Service built using ASP.NET Core and Reliable Collections. The service exposes an HTTP endpoint with an API hosted with Kestrel. The services store key-value pairs in a Reliable Dictionary and can be partitioned based on the first letter of the key.</p>
+            <ul>
+                <li>
+                    <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction" target="_blank">
+                        Learn more about Reliable Services
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-reliable-collections" target="_blank">
+                        Learn more Reliable Collections
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-communication-aspnetcore" target="_blank">
+                        Learn more about ASP.NET Core in Reliable Services
+                    </a>
+                </li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <!-- Input, Table and Messages -->
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <p>The services store key value pairs in partitions based on the first letter of the key. Add a key value pair to the service below and/or get all the key value pairs from the stateful service.</p>
+                <!-- Input and Table -->
+                <div class="col-md-6">
+                    <!-- Input -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="keyInput" placeholder="key" tabindex="1">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="valueInput" placeholder="value" tabindex="2">
+                        </div>
+                    </div>
+                    <div class="row top-buffer">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary btn-block" onclick="addStatefulBackendServiceKeyValuePair()" type="button" id="addStatefulBackendServiceKeyValuePair" tabindex="3">Add</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-primary btn-block" onclick="getStatefulBackendServiceDictionary()" type="button" id="getStatefulBackendServiceDictionary" tabindex="4">Get All</button>
+                        </div>
+                    </div>
+                    <!-- Table -->
+                    <div class="row top-buffer">
+                        <div class="col-md-12 table-responsive" style="overflow: auto; height:150px">
+                            <table class="table table-striped" id="statefulBackendServiceTable">
+                                <tr>
+                                    <th>Key</th>
+                                    <th>Value</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

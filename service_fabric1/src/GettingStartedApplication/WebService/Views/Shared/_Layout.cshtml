@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <link rel="icon" type="image/png" href="~/images/favicon.png" />
+    <link rel="stylesheet" href="~/css/site.css">
+
+    <style>
+        .top-buffer {
+            padding-top: 10px;
+        }
+
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            height: 100px;
+        }
+
+        .no-margin {
+            margin: unset;
+        }
+    </style>
+</head>
+<body onload="navTab(); handleEnter()">
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <img alt="Service Fabric" src="~/images/favicon.png" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="navbarUl">
+                    <li id="navHome">
+                        <a href="/">Home</a>
+                    </li>
+                    <li id="navGuestExe">
+                        <a href="/Home/GuestExe">Guest EXE</a>
+                    </li>
+                    <li id="navStateless">
+                        <a href="/Home/Stateless">Stateless</a>
+                    </li>
+                    <li id="navStateful">
+                        <a href="/Home/Stateful">Stateful</a>
+                    </li>
+                    <li id="navActor">
+                        <a href="/Home/Actor">Actor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="panel panel-success" id="statusPanel">
+                <div class="panel-heading" id="statusPanelHeading">
+                    HTTP Status Code
+                </div>
+                <div class="panel-body" id="statusPanelBody">Information</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "SF OneApp - Stateless";
+}
+<!-- Content Row -->
+<div class="row">
+    <!-- Heading row -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Stateless Backend Service</h1>
+            <p>A stateless Reliable Service that does a long running job processing task. The service exposes an RPC endpoint using Service Remoting with a single method though a shared remoting interface.</p>
+            <ul>
+                <li>
+                    <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction" target="_blank">
+                        Learn more about stateless Reliable Services
+                    </a>
+                </li>
+                <li>
+                    <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-communication-remoting" target="_blank">
+                        Learn more about Service Remoting
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Service column -->
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="col-md-12">
+                    <p>The service increments a counter every second. Click the button to get the current count from the service.</p>
+                    <!-- Button -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <button class="btn btn-primary btn-block" onclick="getStatelessBackendCount()" type="button" id="getStatelessBackendCount" tabindex="1">Get Count</button>
+                                </div>
+                                <div class="panel-body">
+                                    <h1 class="text-center no-margin" id="countDisplay">0</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
