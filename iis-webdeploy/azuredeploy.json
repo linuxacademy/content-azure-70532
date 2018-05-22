@@ -256,8 +256,8 @@
             "typeHandlerVersion": "2.19",
             "autoUpgradeMinorVersion": true,
             "settings": {
-              "ConfigurationFunction": "WindowsWebServer.ps1\\WindowsWebServer",
-              "ModulesUrl": "[concat('https://raw.githubusercontent.com/mikepfeiffer/iis-webdeploy/master', '/DSC/WindowsWebServer.zip')]",
+              "ConfigurationFunction": "configure-iis-with-web-deploy-dsc.ps1\\WindowsWebServer",
+              "ModulesUrl": "[concat('https://raw.githubusercontent.com/linuxacademy/content-azure-70532/master', 'configure-iis-with-web-deploy-dsc.ps1.zip')]",
               "Properties": {
               }
             },
