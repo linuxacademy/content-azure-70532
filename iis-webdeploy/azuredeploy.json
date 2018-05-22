@@ -2,20 +2,28 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "adminUsername": {
-      "type": "string",
-      "minLength": 1,
-      "metadata": {
-        "description": "Username for the Virtual Machine."
+    "computerName": {
+        "type": "string",
+        "minLength": 1,
+        "metadata": {
+          "description": "A name for the computer."
+        },
+        "defaultValue": "winserver"
       },
-      "defaultValue": "sysadmin"
-    },
-    "adminPassword": {
+      "adminUsername": {
+        "type": "string",
+        "minLength": 1,
+        "metadata": {
+          "description": "Username for the Virtual Machine."
+        },
+        "defaultValue": "la70532"
+      },
+        "adminPassword": {
       "type": "securestring",
       "metadata": {
         "description": "Password for the Virtual Machine."
       },
-      "defaultValue": "P@ssw0rd2016"
+      "defaultValue": "La!70532!2018"
     },
     "dnsNameForPublicIP": {
       "type": "string",
@@ -23,7 +31,7 @@
       "metadata": {
         "description": "Globally unique Name for the Public IP used to access the Virtual Machine."
       },
-      "defaultValue": "mypip17"
+      "defaultValue": "la70532dsc-pip"
     },
     "windowsOSVersion": {
       "type": "string",
@@ -49,9 +57,9 @@
     "publicIPAddressName": "myPublicIP",
     "publicIPAddressType": "Dynamic",
     "vhdStorageContainerName": "vhds",
-    "vmName": "IISVM",
+    "vmName": "[parameters('computerName')]",
     "vmSize": "Standard_DS2_v2",
-    "virtualNetworkName": "MyVNET",
+    "virtualNetworkName": "dscVnet",
     "vnetId": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
     "vhdStorageAccountName": "[concat('vhdstorage', uniqueString(resourceGroup().id))]",
