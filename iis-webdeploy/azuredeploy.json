@@ -265,7 +265,7 @@
             "autoUpgradeMinorVersion": true,
             "settings": {
               "ConfigurationFunction": "configure-iis-with-web-deploy-dsc.ps1\\WindowsWebServer",
-              "ModulesUrl": "[concat('https://raw.githubusercontent.com/linuxacademy/content-azure-70532/master', 'configure-iis-with-web-deploy-dsc.ps1.zip')]",
+              "ModulesUrl": "[concat('https://raw.githubusercontent.com/linuxacademy/content-azure-70532/master/iis-webdeploy/', 'configure-iis-with-web-deploy-dsc.ps1.zip')]",
               "Properties": {
               }
             },
