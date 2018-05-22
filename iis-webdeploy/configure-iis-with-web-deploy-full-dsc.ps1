@@ -1,3 +1,6 @@
+Install-PackageProvider -Name NuGet -RequiredVersion 2.8.5.201 -Force
+Install-Module xWebAdministration -Force
+
 Configuration WindowsWebServer {
 
     Import-DscResource -ModuleName PSDesiredStateConfiguration, xWebAdministration
