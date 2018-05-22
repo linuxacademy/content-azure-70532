@@ -1,23 +1,97 @@
-configuration IISWebsiteWithWebDeploy
-{
-    node ("localhost")
-    {
-        WindowsFeature WebServer
+Configuration WindowsWebServer {
+
+    Import-DscResource -ModuleName PSDesiredStateConfiguration, xWebAdministration
+
+    Node localhost {
+
+        WindowsFeature WebServerRole
         {
-           Ensure = "Present"
-           Name   = "Web-Server"
-           IncludeAllSubFeature = $true
+		    Name = "Web-Server"
+		    Ensure = "Present"
         }
 
-        File FriendlyName
+        WindowsFeature WebManagementConsole
         {
-            Ensure          = "Present"
-            Contents        = "Hi from DSC!"
-            DestinationPath = "c:\inetpub\wwwroot\default.html"
-            DependsOn       = "[WindowsFeature]WebServer"
-        }       
+            Name = "Web-Mgmt-Console"
+            Ensure = "Present"
+        }
 
-        Script DownloadWebDeploy
+        WindowsFeature WebManagementService
+        {
+            Name = "Web-Mgmt-Service"
+            Ensure = "Present"
+        }
+
+        WindowsFeature ASPNet45
+        {
+		    Ensure = "Present"
+		    Name = "Web-Asp-Net45"
+        }
+
+        WindowsFeature HTTPRedirection
+        {
+            Name = "Web-Http-Redirect"
+            Ensure = "Present"
+        }
+
+        WindowsFeature CustomLogging
+        {
+            Name = "Web-Custom-Logging"
+            Ensure = "Present"
+        }
+
+        WindowsFeature LogginTools
+        {
+            Name = "Web-Log-Libraries"
+            Ensure = "Present"
+        }
+
+        WindowsFeature RequestMonitor
+        {
+            Name = "Web-Request-Monitor"
+            Ensure = "Present"
+        }
+
+        WindowsFeature Tracing
+        {
+            Name = "Web-Http-Tracing"
+            Ensure = "Present"
+        }
+
+        WindowsFeature BasicAuthentication
+        {
+            Name = "Web-Basic-Auth"
+            Ensure = "Present"
+        }
+
+        WindowsFeature WindowsAuthentication
+        {
+            Name = "Web-Windows-Auth"
+            Ensure = "Present"
+        }
+
+        WindowsFeature ApplicationInitialization
+        {
+            Name = "Web-AppInit"
+            Ensure = "Present"
+        }
+
+        WindowsFeature IISManagement  
+        {  
+            Ensure          = 'Present'
+            Name            = 'Web-Mgmt-Console'
+            DependsOn       = '[WindowsFeature]WebServerRole'
+        } 
+  
+        xWebsite DefaultSite   
+        {  
+            Ensure          = 'Present'
+            Name            = 'Default Web Site'
+            PhysicalPath    = 'C:\inetpub\wwwroot' 
+            DependsOn       = '[WindowsFeature]WebServerRole'
+        }
+
+	    Script DownloadWebDeploy
         {
             TestScript = {
                 Test-Path "C:\WindowsAzure\WebDeploy_amd64_en-US.msi"
@@ -28,25 +102,26 @@ configuration IISWebsiteWithWebDeploy
                 Invoke-WebRequest $source -OutFile $dest
             }
             GetScript = { @{Result = "WebDeployDownload"} }
-            DependsOn = "[WindowsFeature]WebServer"
+		    DependsOn = "[WindowsFeature]WebServerRole"
         }
 
-        Package InstallWebDeploy
+	    Package InstallWebDeploy
         {
             Ensure = "Present"  
             Path  = "C:\WindowsAzure\WebDeploy_amd64_en-US.msi"
             Name = "Microsoft Web Deploy 3.6"
             ProductId = "{6773A61D-755B-4F74-95CC-97920E45E696}"
-            Arguments = "/quiet ADDLOCAL=ALL"
-            DependsOn = "[Script]DownloadWebDeploy"
+		    Arguments = "/quiet ADDLOCAL=ALL"
+		    DependsOn = "[Script]DownloadWebDeploy"
         }
 
         Service StartWebDeploy
         {
-            Name = "WMSVC"
-            StartupType = "Automatic"
-            State = "Running"
-            DependsOn = "[Package]InstallWebDeploy"
+		    Name = "WMSVC"
+		    StartupType = "Automatic"
+		    State = "Running"
+		    DependsOn = "[Package]InstallWebDeploy"
         }
+
     }
 }
