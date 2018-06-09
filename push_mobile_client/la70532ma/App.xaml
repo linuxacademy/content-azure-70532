@@ -1,0 +1,9 @@
+﻿<Application
+    x:Class="la70532ma.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:la70532ma"
+    xmlns:converters="using:la70532ma.Converters"
+    RequestedTheme="Light">
+
+</Application>

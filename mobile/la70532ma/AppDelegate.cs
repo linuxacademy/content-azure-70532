@@ -14,12 +14,12 @@ namespace la70532ma
 	{
 		// class-level declarations
 		public override UIWindow Window {get; set;}
-
+        
+        // needed for authorization
 		public static Func<NSUrl, bool> ResumeWithURL;
 
         public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         {
-			Console.WriteLine("openurl");
             return ResumeWithURL != null && ResumeWithURL(url);
         }
 	}

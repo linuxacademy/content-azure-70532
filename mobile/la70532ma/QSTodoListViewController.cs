@@ -25,12 +25,15 @@ namespace la70532ma
 				await RefreshAsync ();
 			};
 
-			//await RefreshAsync ();
+            // remove the following for authentication
+			// await RefreshAsync ();
 		}
 
 		private async Task RefreshAsync ()
 		{
 			// start of RefreshAsync method
+
+			// this block is for authentication
             if (todoService.User == null)
             {
                 await QSTodoService.DefaultService.Authenticate(this);

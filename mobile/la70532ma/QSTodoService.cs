@@ -5,7 +5,7 @@
  *
  * For more information, see: http://go.microsoft.com/fwlink/?LinkId=717898
  */
-//#define OFFLINE_SYNC_ENABLED
+#define OFFLINE_SYNC_ENABLED
 
 using System;
 using System.Net.Http;
@@ -68,7 +68,7 @@ namespace la70532ma
                 return instance;
             }
         }
-
+       
 		public async Task Authenticate(UIViewController view)
         {
             try
@@ -89,7 +89,7 @@ namespace la70532ma
 #if OFFLINE_SYNC_ENABLED
 			try
 			{
-				var store = new MobileServiceSQLiteStore("localstore2.db");
+				var store = new MobileServiceSQLiteStore("localstore.db");
 				store.DefineTable<ToDoItem>();
 
 				// Uses the default conflict handler, which fails on conflict
@@ -175,6 +175,8 @@ namespace la70532ma
                 Console.Error.WriteLine (@"ERROR {0}", e.Message);
             }
         }
+
+
     }
 }
 
