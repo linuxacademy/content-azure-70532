@@ -1,0 +1,17 @@
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Blobs.exe.config
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Blobs.exe
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Blobs.pdb
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Newtonsoft.Json.dll
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\bin\Debug\Newtonsoft.Json.xml
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\obj\Debug\Blobs.csprojAssemblyReference.cache
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\obj\Debug\Blobs.csproj.CoreCompileInputs.cache
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\obj\Debug\Blobs.csproj.CopyComplete
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\obj\Debug\Blobs.exe
+C:\Users\michaelheydt\source\repos\Blobs\Blobs\obj\Debug\Blobs.pdb

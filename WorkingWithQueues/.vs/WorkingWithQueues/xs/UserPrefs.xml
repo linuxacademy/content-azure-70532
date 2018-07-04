@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{DDC15B03-E065-48CC-B06B-60C59EF85059}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkingWithQueues/Program.cs">
+    <Files>
+      <File FileName="WorkingWithQueues/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WorkingWithQueues PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

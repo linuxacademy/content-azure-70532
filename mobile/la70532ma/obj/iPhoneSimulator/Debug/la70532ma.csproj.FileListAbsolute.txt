@@ -43,8 +43,8 @@
 /Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.4/optimized/Default-Portrait@2x.png
 /Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.4/optimized/Default-Landscape@2x.png
 /Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.4/optimized/
-/Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/la70532ma.csprojResolveAssemblyReference.cache
 /Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/la70532ma.csproj.CoreCompileInputs.cache
 /Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/la70532ma.csproj.CopyComplete
 /Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/la70532ma.exe
 /Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/la70532ma.pdb
+/Users/michaelheydt/Dev/LA/content-azure-70532/mobile/la70532ma/obj/iPhoneSimulator/Debug/la70532ma.csprojAssemblyReference.cache

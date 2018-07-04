@@ -1,0 +1,17 @@
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Queues.exe.config
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Queues.exe
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Queues.pdb
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Newtonsoft.Json.dll
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\michaelheydt\source\repos\Queues\Queues\bin\Debug\Newtonsoft.Json.xml
+C:\Users\michaelheydt\source\repos\Queues\Queues\obj\Debug\Queues.csprojAssemblyReference.cache
+C:\Users\michaelheydt\source\repos\Queues\Queues\obj\Debug\Queues.csproj.CoreCompileInputs.cache
+C:\Users\michaelheydt\source\repos\Queues\Queues\obj\Debug\Queues.csproj.CopyComplete
+C:\Users\michaelheydt\source\repos\Queues\Queues\obj\Debug\Queues.exe
+C:\Users\michaelheydt\source\repos\Queues\Queues\obj\Debug\Queues.pdb

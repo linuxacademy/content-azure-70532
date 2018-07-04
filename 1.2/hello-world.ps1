@@ -1,1 +1,0 @@
-﻿New-Item c:\temp.txt -ItemType file -Value "This is the contents"

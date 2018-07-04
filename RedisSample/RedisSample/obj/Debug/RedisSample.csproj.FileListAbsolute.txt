@@ -1,0 +1,14 @@
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\RedisSample.exe.config
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\RedisSample.exe
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\RedisSample.pdb
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\Microsoft.Azure.ConfigurationManager.dll
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\Newtonsoft.Json.dll
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\StackExchange.Redis.dll
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\Microsoft.Azure.ConfigurationManager.xml
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\Newtonsoft.Json.xml
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\bin\Debug\StackExchange.Redis.xml
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\obj\Debug\RedisSample.csprojAssemblyReference.cache
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\obj\Debug\RedisSample.csproj.CoreCompileInputs.cache
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\obj\Debug\RedisSample.csproj.CopyComplete
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\obj\Debug\RedisSample.exe
+c:\users\michaelheydt\source\repos\RedisSample\RedisSample\obj\Debug\RedisSample.pdb
