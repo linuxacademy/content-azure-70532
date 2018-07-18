@@ -22,7 +22,7 @@ namespace SAS
         static string GetAccountSASToken()
         {
             // To create the account SAS, you need to use your shared key credentials. Modify for your account.
-            const string ConnectionString = "DefaultEndpointsProtocol=https;AccountName=la70532stg;AccountKey=pZlnrEm2kcxgEvmFbyqlJcUsBre0gEFe7sTkFoqb4shrziXY1P103xjKganqx9MNLlDwBHnUMN/tcVpdwIlzbg==;EndpointSuffix=core.windows.net";
+            const string ConnectionString = "";
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
 
             // Create a new access policy for the account.
